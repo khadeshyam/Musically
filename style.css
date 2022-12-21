@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&family=Varela+Round&display=swap');
+
+body{
+    background-color:antiquewhite;
+
+}
+
+div .antiqueWhite{
+    background-color:antiquewhite; 
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.heading{
+    text-align:center;
+}
+
+.songList{
+   width:100%;
+}
+ul img{
+    width:10%;
+    height:10%;
+}
+ nav ul li{
+  display:flex; 
+  align-items:center;
+  justify-content:space-between;
+  padding:0 25px;
+}
+
+.brand img{
+    width:40px;
+    height:40px;
+}
+
+nav{
+    font-family:'Poppins', sans-serif;
+    
+}
+
+nav ul{
+    display:flex;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+.container{
+ min-height:100vh;
+ background:url('./background-images/bg_01.jpg');
+ font-family:'Varela Round','sans-serif';
+ display:flex;
+ color: white;
+ text-align: center;
+ justify-content: center;
+ margin:2px auto;
+ width: 80%;
+ overflow:scroll;
+
+}
+
+#songs-container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.brand{
+    display:flex;
+    width:15vw;
+    font-size:1.3rem;
+    font-weight:bold;
+
+}
+
+.bottom{
+    position:sticky;
+    height:70px;
+    background-color:#dd99f0;
+    color:black;
+    bottom:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   opacity:0.8;
+}
+
+.bottom #songTitle{
+    font-weight:bold;
+}
+
+#myProgressBar{
+    width:80vw;
+    height:2px;
+    cursor:pointer;
+}
+
+#myProgressBar:hover{
+    cursor:pointer;
+}
+
+.timeSpan .hide{
+    display:none;
+}
+
+.icons .hide{
+    display:none;
+}
+
+.icons img{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height:20px;
+    width:20px;
+    cursor: pointer;
+    margin:25px 50px;
+}
+.icons{
+    display:flex;
+    justify-content: center;
+    margin-top:-12px;
+}
+
+.songItem{
+    display: flex;
+    flex-direction:row;
+    background-color:white;
+    color:black;
+    margin:12px 10px;
+    justify-content:space-between;
+    align-items: center;
+    font-size:0.9rem;
+    font-weight:bold;
+    border-radius:25px;
+    width:60vw;
+    padding: 9px 15px;
+}
+
+.songItem img{
+   height:30px;
+   width:30px;
+   border-radius: 10px;
+}
+
+.songInfo img{
+    width:60px;
+    height:10px;
+    opacity:0;
+    transition:opacity 0.2s ease-in;
+}
+
+.songInfo {
+    position:absolute;
+    left:10vw;
+    margin-top:-9px;
+}
+
+
+
+@media screen and (max-width:900px) {
+     .songInfo{
+        position:absolute;
+        bottom:-15px;
+        left:0;
+        text-align: center;
+        color:black;
+        display:block;
+        background:#dd99f0;
+        width:100%;
+        opacity:0.8;
+         }
+  }
+
+  @media screen and (max-width:700px) {
+        #home,#about{
+            display:none;
+        }
+        .brand{
+            width:50vw;
+        }
+        
+ }
+
+ @media screen and (max-width:450px) {
+
+    .songItem{
+        width: 70vw;
+      }
+    
+}
+
+li a{
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+ 
+
+  

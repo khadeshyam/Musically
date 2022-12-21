@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A music player app">
+  <meta name="keywords" content="Music Player using HTML,CSS and JS">
+
+  <title>Musicali</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="brand" id="logo-name">
+        <img src="./logos/logo.png" alt="logo" />
+        Musicali
+      </li>
+      <li id="home">Home</li>
+      <li id="about">About</li>
+    </ul>
+  </nav>
+
+  <div class="container" id="con">
+    <div class="songList">
+      <h1 class="heading">Best of 2022</h1>
+      <div id="songs-container">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <input type="range" min="0" max="1000000" id="myProgressBar" value="0">
+    <div class="icons">
+      <img id="play-reverse" alt="play-reverse" src="./logos/backward.svg" />
+      <img id="play" src="./logos/play.svg" alt="play">
+      <img id="pause" src="./logos/pause.svg" class="hide" alt="pause" />
+      <img id="play-forward" src="./logos/forward.svg" alt="play-forward..">
+    </div>
+    <div class="songInfo">
+      <img src="./background-images/music_animation.gif" id="music_gif" alt="music_gif">
+      <span id="songTitle"></span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
